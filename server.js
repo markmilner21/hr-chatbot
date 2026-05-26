@@ -10,7 +10,7 @@ import { fileURLToPath } from "url";
 // ---------------------------------------------------------------------------
 
 const PORT = process.env.PORT || 3000;
-const MODEL = "claude-3-5-sonnet-20241022";
+const MODEL = "claude-sonnet-4-6";
 const MAX_TOKENS = 1024;
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
