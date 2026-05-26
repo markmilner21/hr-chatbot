@@ -5,6 +5,10 @@
  *   UNIT        - tests input validation; no API key or running server needed.
  *   INTEGRATION - tests LLM behaviour via a live server; requires ANTHROPIC_API_KEY
  *                 and a running server (npm start) on BASE_URL.
+ * 
+ * In terminal: npm start
+ * 
+ * In another terminal: run the following tests
  *
  * Run unit only:        npm test
  * Run integration only: npm run test:integration
