@@ -15,3 +15,6 @@
 1.  prompt for claude - (tone + guardrails)
 2. Dynamic Policy Context - Instead of hardcoding, load from files: i.e. Here are Paluza's current HR policies. Answer questions based solely on these documents. IMPORTANT: These are the source of truth. Do not add information from your training data.
 3. 
+
+ - api key invalid - mention the fact that he'll have to create a new one here: https://platform.claude.com/settings/keys - and to not send it to anyone  
+ - old version of claude - updated to 4.6
