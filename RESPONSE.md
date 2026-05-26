@@ -1,9 +1,15 @@
-- anyone who views the raw html can see this - not ideal - make a note of this
+- A public URL with no auth means anyone on the internet can use it, not just employees
 - also don't think we'd want everyone to see the HR polocy
 - add an auth / don't keep potentially harmful stuff on HTML
 - "confidently and directly" - potential issue - . An LLM will confidently make up details rather than admit uncertainty. / don't invent policy
 - "if you don't know something, do your best to help anyway." - also a potential risk / hallucination
 - what if the policies change? - Hardcoded policies in code — Policies change; you'd have to redeploy to update them.
+- hr_helpdesk_export.json contains real employee PII - should probably be removed.
+
+
+
+
+
 - with that in mind:
 
 1.  prompt for claude - (tone + guardrails)
