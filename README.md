@@ -22,9 +22,6 @@ A public URL means anyone on the internet can access the chatbot, not just emplo
 
 Do not deploy to a public URL without one of these in place.
 
-### Helpdesk export
-`hr_helpdesk_export.json` contains real employee names, email addresses, and in one case a bank account number. This file is not used by the chatbot. Remove it from the repo before pushing to any remote, or ensure the repo stays private.
-
 ---
 
 ## What's in the repo
@@ -36,7 +33,6 @@ Do not deploy to a public URL without one of these in place.
 | `policies/` | HR policy documents (Markdown). Add or edit `.md` files here to update the chatbot's knowledge |
 | `tests.js` | Unit and integration test suite |
 | `.env.example` | Template for required environment variables — copy to `.env` and fill in |
-| `hr_helpdesk_export.json` | ⚠️ Contains real employee PII — remove before pushing to any remote |
 
 ---
 
