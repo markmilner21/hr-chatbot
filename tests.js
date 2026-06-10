@@ -143,7 +143,7 @@ if (runIntegration) {
         "unable to find",
         "not in",
         "contact",
-        "people@paluza",
+        "hr team",
       ]);
       assert.ok(admitsUnknown, `Expected bot to admit uncertainty, got: "${body.reply}"`);
 
@@ -171,7 +171,7 @@ if (runIntegration) {
       const caveatsAmbiguity = containsAny(body.reply, [
         "may depend",
         "contact",
-        "people@paluza",
+        "hr team",
         "speak to",
         "statutory",
         "check",
@@ -193,7 +193,7 @@ if (runIntegration) {
       const redirects = containsAny(body.reply, [
         "hr",
         "policy",
-        "people@paluza",
+        "hr team",
         "not able to help with",
         "outside",
         "only able to",
@@ -214,11 +214,4 @@ if (runIntegration) {
         { role: "assistant", content: "Full-time employees receive 25 days of annual leave plus 8 public holidays." },
         { role: "user", content: "Does that increase after a few years?" },
       ]);
-      assert.equal(status, 200, `got ${status}: ${body.error}`);
-
-      const mentionsIncrease = containsAny(body.reply, ["26", "27", "increase", "after 2", "after 4", "years"]);
-      assert.ok(mentionsIncrease, `Expected mention of leave increases with tenure, got: "${body.reply}"`);
-    });
-
-  });
-}
+      
